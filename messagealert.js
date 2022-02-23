@@ -1,8 +1,7 @@
-const detailsOfPatient=document.getElementById('patient1');
+const detailsOfPatient=document.getElementById('patient1_MedicineAlert');
 const messageStatus=document.getElementById('messageStatus');
 
 function sendAlertToTheDevice() {
-
     //set the status of the alert object
     firebase.database().ref("IOT/Patient1/Alert/status").set(1 , function(error) {
             if(error)

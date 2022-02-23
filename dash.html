@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Responsive Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css"  href="messageAlert.css">
+    <link rel="stylesheet" type="text/css"  href="cardStyledDetail.css">
     <link rel="stylesheet" type="text/css" href="submitbutton.css">
 </head>
 <body>
@@ -56,10 +56,10 @@
             </div>
         </div>
 
-             <!--HOME-->
+        <!--HOME-->
         <div id="home">
             <div class="pat1"> 
-                <div class="deltails">
+                <div class="details">
                     <h2 id = "name1"> Name : </h2>
                     <h2 id = "age1"> Age : </h2>
                     <h2 id = "medRep1"> Medical Reports : </h2>
@@ -76,8 +76,8 @@
 
         <!--MEDICINE ALERT-->
         <div id="medicineAlert" style="display: none;"> 
-            <div class="detailsForMedicineAlert">
-                <div id="patient1" class="card">
+            <div class="detailsForCategories">
+                <div id="patient1_MedicineAlert" class="card">
                     <h3>Name: patient1</h3>
                     <h3>Health Status: <div>Normal</div></h3>
                     <h3>Message to display: </h3><input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..."/>
@@ -86,7 +86,7 @@
                     <h3 id="messageStatus"></h3>
                 </div>
 
-                <div id="patient2" class="card">
+                <div id="patient2_MedicineAlert" class="card">
                     <h3>Name: patient2</h3>
                     <h3>Health Status: <div>Normal</div></h3>
                     <h3>Message to display: </h3><input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..."/>
@@ -101,12 +101,32 @@
 
         <!--REMINDER-->
         <div id="reminder" style="display: none;">
-            <h1>This is the page for reminder</h1>
+            <div class="detailsForCategories">
+                <div id="patient1_reminder" class="card">
+                    <h3>Name: patient1</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                </div>
+
+                <div id="patient2_reminder" class="card">
+                    <h3>Name: patient2</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                </div>
+            </div>
         </div>
 
         <!--CONTACT-->
         <div id="contact" style="display: none;">
-            <h1>This is the page for contact    </h1>
+            <div class="detailsForCategories">
+                <div id="patient1_contact" class="card">
+                    <h3>Name: patient1</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                </div>
+
+                <div id="patient2_contact" class="card">
+                    <h3>Name: patient2</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                </div>
+            </div>
         </div>
 
 
