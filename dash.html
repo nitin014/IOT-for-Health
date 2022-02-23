@@ -41,7 +41,7 @@
                 </a>
             </li>
             <li>
-                <a onclick="logout()">
+                <a href="#" onclick="logout()">
                     <span class="title">Sign-Out</span>
                     <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                 </a>
@@ -80,7 +80,8 @@
                 <div id="patient1_MedicineAlert" class="card">
                     <h3>Name: patient1</h3>
                     <h3>Health Status: <div>Normal</div></h3>
-                    <h3>Message to display: </h3><input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..."/>
+                    <h3>Message to display: </h3>
+                    <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." required/>
                     <br>
                     <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
                     <h3 id="messageStatus"></h3>
@@ -89,7 +90,8 @@
                 <div id="patient2_MedicineAlert" class="card">
                     <h3>Name: patient2</h3>
                     <h3>Health Status: <div>Normal</div></h3>
-                    <h3>Message to display: </h3><input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..."/>
+                    <h3>Message to display: </h3>
+                    <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." required/>
                     <br>
                     <input type="button" value="Send data" class="form-submit-button">
                     <h3 id="messageStatus2"></h3>
