@@ -1,9 +1,10 @@
-.details {
+.detailsForMedicineAlert {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
-    gap: 50px;
+    text-align:center;  
+    align-items: center;
+    gap: 50px;    
 }
 
 .card {
