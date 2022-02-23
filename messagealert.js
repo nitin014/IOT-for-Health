@@ -2,6 +2,13 @@ const detailsOfPatient=document.getElementById('patient1_MedicineAlert');
 const messageStatus=document.getElementById('messageStatus');
 
 function sendAlertToTheDevice() {
+
+    if(detailsOfPatient.children[3].value=="") {
+        console.log("No input provided. Please type a msg");
+        messageStatus.textContent="Please provide an input message";
+        return;
+    }
+
     //set the status of the alert object
     firebase.database().ref("IOT/Patient1/Alert/status").set(1 , function(error) {
             if(error)
