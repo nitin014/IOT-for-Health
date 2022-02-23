@@ -79,7 +79,7 @@ function dataloaded(data){
   console.log(BPMdata);
   console.log(BPMtime);
 
-  new Chart("BPMchart", {
+  new Chart("pat1BPMchart", {
     type: "line",
     data: {
       labels: BPMtime,
@@ -106,8 +106,45 @@ function dataloaded(data){
   }
   });
 
-  
+  var TEMPData = [];
+  var TEMPtiming = [];
 
+
+  for (const key in data.Patient1.RHD.Bodytemp) {
+    //console.log(`${key}: ${data.Patient1.RHD.BPM[key].Ts}`);
+    TEMPData.push(`${data.Patient1.RHD.Bodytemp[key].TEMP}`);
+    var dd = new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`)).toLocaleTimeString();
+    TEMPtiming.push(dd);
+  }
+
+  console.log(TEMPData);
+
+  new Chart("pat1TEMPchart", {
+    type: "line",
+    data: {
+      labels: TEMPtiming,
+      datasets: [{
+        
+        fill: false,
+        lineTension: 0,
+        backgroundColor: "rgba(255,0,0,1.0)",
+        borderColor: "rgba(255,0,0,0.5)",
+        data: TEMPData,
+      }]
+    },
+    options: {
+      scales: {
+          yAxes: [{
+              display: true,
+              stacked: true,
+              ticks: {
+                  min: 0, // minimum value
+                  max: 50 // maximum value
+              }
+          }]
+      }
+  }
+  });
   
   
 }
