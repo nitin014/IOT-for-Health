@@ -112,7 +112,9 @@ function dataloaded(data){
 
   for (const key in data.Patient1.RHD.Bodytemp) {
     //console.log(`${key}: ${data.Patient1.RHD.BPM[key].Ts}`);
-    TEMPData.push(`${data.Patient1.RHD.Bodytemp[key].TEMP}`);
+    var temp = `${data.Patient1.RHD.Bodytemp[key].TEMP}`;
+    temp  = temp*1.8 + 32;
+    TEMPData.push(temp);
     var dd = new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`)).toLocaleTimeString();
     TEMPtiming.push(dd);
   }
@@ -138,8 +140,8 @@ function dataloaded(data){
               display: true,
               stacked: true,
               ticks: {
-                  min: 0, // minimum value
-                  max: 50 // maximum value
+                  min: 50, // minimum value
+                  max: 110 // maximum value
               }
           }]
       }
