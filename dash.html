@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Responsive Admin Dashboard</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"  href="alert.css">
+    <link rel="stylesheet" type="text/css" href="submitbutton.css">
 </head>
 <body>
 <div class="container">
@@ -15,25 +17,25 @@
                 </a>
             </li>
             <li>
-                <a href = "#">
+                <a href = "#" onclick="changeVisibilityFor('home')">
                     <span class="title">Home</span>
                     <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                 </a>
             </li>
             <li>
-                <a href = "#">
+                <a href = "#" onclick="changeVisibilityFor('medicineAlert')">
                     <span class="title">Medicine Alert</span>
                     <span class="icon"><ion-icon name="diamond-outline"></ion-icon></span>
                 </a>
             </li>
             <li>
-                <a href = "#">
+                <a href = "#" onclick="changeVisibilityFor('reminder')">
                     <span class="title">Reminder</span>
                     <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
                 </a>
             </li>
             <li>
-                <a href = "#">
+                <a href = "#" onclick="changeVisibilityFor('contact')">
                     <span class="title">Contact</span>
                     <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
                 </a>
@@ -54,8 +56,8 @@
             </div>
         </div>
 
-        <div class = "patientdetailscontainer">
 
+<<<<<<< HEAD
             <div class="pat1"> 
                 <div class="deltails">
                     <h2 id = "name1"> Name : </h2>
@@ -69,15 +71,63 @@
                 </div>
 
             </div>
+=======
+        <!--HOME-->
+        <div id="home">
+            <div class="patientdetailscontainer">
+                <div class="details">
+                    <h3> Name : chintu <br> Health Status : Normal <br> Remark : NO</h3>
+                </div>
+>>>>>>> testing
 
+                <div class="bpmtemp">
+                    <div class="bpm">
+                        <h4>72 <br> Beats Per Minutes</h4>
+                        <canvas id="myChart" ></canvas>
+                    </div>
+                    <div class="temp">
+                        37.5C <br> Last recorded at 12:22:36 22/02/2022
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
+        <!--MEDICINE ALERT-->
+        <div id="medicineAlert" style="display: none;"> 
+            <div class="detailsForMedicineAlert">
+                <div id="patient1" class="card">
+                    <h3>Name: patient1</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                    <h3>Message to display: </h3><input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..."/>
+                    <br>
+                    <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
+                    <h3 id="messageStatus"></h3>
+                </div>
+
+                <div id="patient2" class="card">
+                    <h3>Name: patient2</h3>
+                    <h3>Health Status: <div>Normal</div></h3>
+                    <h3>Message to display: </h3><input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..."/>
+                    <br>
+                    <input type="button" value="Send data" class="form-submit-button">
+                    <h3 id="messageStatus2"></h3>
+                </div>
+
+            </div>
+        </div>
 
 
+        <!--REMINDER-->
+        <div id="reminder" style="display: none;">
+            <h1>This is the page for reminder</h1>
+        </div>
 
-
-
+        <!--CONTACT-->
+        <div id="contact" style="display: none;">
+            <h1>This is the page for contact    </h1>
+        </div>
 
 
     </div>
@@ -91,6 +141,8 @@
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
 <script src="script.js"> </script>
+<script src="messagealert.js"></script>
+<script src="changeVisibility.js"></script>
 <script>
     firebase.auth().onAuthStateChanged(function(user){
         if(!user)
