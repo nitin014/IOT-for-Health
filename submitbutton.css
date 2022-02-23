@@ -4,6 +4,7 @@
     border: 1px solid #eee;
     border-radius: 5px;    
     text-shadow: none;
+    width: 100px;
 }
 
 .form-submit-button:hover {
