@@ -29,42 +29,5 @@ function sendAlertToTheDevice() {
                 messageStatus.textContent = "Message sent successfully";
                 console.log("Value set for the message field successfully");
             }
-    });
-
-
-
-
-    // let dataDetails = {
-    //     Name: detailsOfPatient.children[0].textContent,
-    //     Status: 1,
-    //     Message: detailsOfPatient.children[3].value
-    // }
-    // STATUS: detailsOfPatient.children[1].firstElementChild.textContent;
-
-
-    // reference for read data from firebase
-    // let data;
-    // firebase.database().ref("IOT/Patient1/Alert").on("value", function(snapshot) {
-    //     data = snapshot.val();
-    //     //dataloaded(data);
-    //  }, function (error) {
-    //     console.log("Error: " + error.code);
-    //  });
-
-    //to set
-    // var userIN = userRef.child(a);
-    //   userIN.set({
-    //     "status": dat1,
-    //   }, function(error)
-    //   {
-    //         if(error)
-    //         {
-    //           var errorCode = error.code;
-    //           var errorMMesage = error.message;
-    //               window.alert(errorMMesage);
-    //         }
-    //   });
-
-
-    
+    });    
 }
