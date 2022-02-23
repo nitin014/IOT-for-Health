@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Responsive Admin Dashboard</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#"> 
+                    <span class="title"></span> 
+                </a>
+            </li>
+            <li>
+                <a href = "#">
+                    <span class="title">Home</span>
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li>
+                <a href = "#">
+                    <span class="title">Medicine Alert</span>
+                    <span class="icon"><ion-icon name="diamond-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li>
+                <a href = "#">
+                    <span class="title">Reminder</span>
+                    <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li>
+                <a href = "#">
+                    <span class="title">Contact</span>
+                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                </a>
+            </li>
+            <li>
+                <a onclick="logout()">
+                    <span class="title">Sign-Out</span>
+                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>  
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <icon class="icon"><ion-icon name="menu-outline"></ion-icon></icon>
+            </div>
+        </div>
+
+        <div class = "patientdetailscontainer">
+
+            <div class="details">
+                <h3> Name : chintu <br> Health Status : Normal <br> Remark : NO</h3>
+            </div>
+
+            <div class="bpmtemp">
+                <div class="bpm">
+                    <h4>72 <br> Beats Per Minutes</h4>
+                    <canvas id="myChart" ></canvas>
+                </div>
+                <div class="temp">
+                    37.5C <br> Last recorder at 12:22:36 22/02/2022
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+<script src="script.js"> </script>
+<script>
+    firebase.auth().onAuthStateChanged(function(user){
+        if(!user)
+        {
+            window.location.href = "index.html";
+        }
+    });
+</script>
+
+</body>
+</html>

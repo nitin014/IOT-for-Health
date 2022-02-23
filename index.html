@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> IOT for Health Care</title>
+<link rel="stylesheet" type="text/css" href="istyle.css">
+</head>
+<body>
+<div id="main">
+    <div class="topbar">
+    <div class = "textdes">
+        There are two Blessing which many people lose: They are Health and free time for doing good. <br> Be healthy 💖 and keep doing good😊.
+    </div>
+    </div>
+    
+    <div class = "pageBox">
+        <div class="page1">
+            <h1 style="text-align:center; transition:5s;">Login to proceed further</h1>
+            <form>
+                <div class="group">
+                  <input id = "emid" type="text"><span class="highlight"></span><span class="bar"></span>
+                  <label>Email</label>
+                </div>
+                <div class="group">
+                  <input id = "passwd" type="password"><span class="highlight"></span><span class="bar"></span>
+                  <label>Password</label>
+                </div>
+                <button onclick="login()" type="button" class="button buttonBlue">Login
+                  <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                </button>
+              </form>
+
+              <div>
+                <p style="font-size:1.8em">Team Wings Of Fire</p>
+              </div>
+        </div>
+        <div class="page2">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+
+<script src="iscript.js"></script>
+
+<script>
+    firebase.auth().onAuthStateChanged(function(user){
+        if(user)
+        {
+            window.location.href = "dash.html";
+        }
+    });
+</script>
+
+</body>
+</html>
