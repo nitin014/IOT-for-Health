@@ -122,22 +122,33 @@
             <div class="detailsForCategories">
                 <div id="patient1_MedicineAlert" class="card">
                     <div class="information_contents">
-                        <h3>NAME: Patient1</h3>
-                        <h3>MESSAGE TO DISPLAY: </h3>
-                        <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." class="inputMessageField" required/>
-                        <h3>HEALTH STATUS: Normal</h3>
-                        <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
+                        <div class="classA">
+                            <h3>NAME: Patient1</h3>
+                            <h3>HEALTH STATUS: Normal</h3>                            
+                        </div>
+
+                        <div class="classB">
+                            <h3>MESSAGE TO DISPLAY: </h3>
+                            <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." class="inputMessageField" required/>
+                            <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
+                        </div>
+
                         <h3 id="messageStatus"></h3>
                     </div>
                 </div>
 
                 <div id="patient2_MedicineAlert" class="card">
                     <div class="information_contents">
-                        <h3>NAME: Patient2</h3>
-                        <h3>MESSAGE TO DISPLAY: </h3>
-                        <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." class="inputMessageField" required/>
-                        <h3>HEALTH STATUS: Normal</h3>
-                        <input type="button" value="Send data" class="form-submit-button">
+                        <div class="classA">
+                            <h3>NAME: Patient2</h3>
+                            <h3>HEALTH STATUS: Normal</h3>
+                        </div>
+                        <div class="classB">
+                            <h3>MESSAGE TO DISPLAY: </h3>
+                            <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." class="inputMessageField" required/>
+                            <input type="button" value="Send data" class="form-submit-button">
+                        </div>
+
                         <h3 id="messageStatus2"></h3>
                     </div>
                 </div>

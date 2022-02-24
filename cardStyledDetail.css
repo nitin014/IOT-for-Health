@@ -39,5 +39,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:flex-start;
-    gap: 30px;
+    gap: 100px;
+}
+
+.classA {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
