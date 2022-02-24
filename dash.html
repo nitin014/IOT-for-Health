@@ -91,23 +91,27 @@
         <div id="medicineAlert" style="display: none;"> 
             <div class="detailsForCategories">
                 <div id="patient1_MedicineAlert" class="card">
-                    <h3>Name: patient1</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
-                    <h3>Message to display: </h3>
-                    <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." required/>
-                    <br>
-                    <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
-                    <h3 id="messageStatus"></h3>
+                    <div class="information_contents">
+                        <h3>NAME: Patient1</h3>
+                        <h3>HEALTH STATUS: Normal</h3>
+                        <h3>MESSAGE TO DISPLAY: </h3>
+                        <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." class="inputMessageField" required/>
+                        <br>
+                        <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
+                        <h3 id="messageStatus"></h3>
+                    </div>
                 </div>
 
                 <div id="patient2_MedicineAlert" class="card">
-                    <h3>Name: patient2</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
-                    <h3>Message to display: </h3>
-                    <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." required/>
-                    <br>
-                    <input type="button" value="Send data" class="form-submit-button">
-                    <h3 id="messageStatus2"></h3>
+                    <div class="information_contents">
+                        <h3>NAME: Patient2</h3>
+                        <h3>HEALTH STATUS: Normal</h3>
+                        <h3>MESSAGE TO DISPLAY: </h3>
+                        <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." class="inputMessageField" required/>
+                        <br>
+                        <input type="button" value="Send data" class="form-submit-button">
+                        <h3 id="messageStatus2"></h3>
+                    </div>
                 </div>
 
             </div>
