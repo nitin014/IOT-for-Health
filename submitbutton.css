@@ -1,10 +1,12 @@
 .form-submit-button {
     background: #B9DFFF;
-    color: #fff;
+    color: rgb(0, 0, 0);
     border: 1px solid #eee;
     border-radius: 5px;    
     text-shadow: none;
+    height: 30px;
     width: 100px;
+    margin-top: 10px;
 }
 
 .form-submit-button:hover {

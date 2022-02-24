@@ -15,8 +15,7 @@
     width: 70%;
     height: 200px;
     opacity: 90%;
-    background: linear-gradient(var(--purple), var(--pink));
-    
+    background: linear-gradient(var(--purple), var(--pink));    
   }
   
 /* On mouse-over, add a deeper shadow */
