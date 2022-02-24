@@ -188,9 +188,12 @@ function dataloaded(data){
         }
         }); 
 
-
 }
 
+function fetchecg(){
+  firebase.database().ref("IOT/Patient1/RHD/ECGfetch").set(1);
+  window.alert("Query sent to the Patient Device, Wait few minutes while data is updates");
+}
 
 
 
