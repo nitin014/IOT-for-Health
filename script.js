@@ -93,6 +93,9 @@ function dataloaded(data){
       }]
     },
     options: {
+      legend: {
+        display: false
+     },
       maintainAspectRatio: false,
       scales: {
           yAxes: [{
@@ -136,6 +139,9 @@ function dataloaded(data){
       }]
     },
     options: {
+      legend: {
+        display: false
+     },
       maintainAspectRatio: false,
       scales: {
           yAxes: [{
@@ -168,12 +174,21 @@ function dataloaded(data){
               
               fill: false,
               lineTension: 0,
-              backgroundColor: "rgba(255,0,0,1.0)",
-              borderColor: "rgba(255,0,0,0.5)",
+              backgroundColor: "rgba(86, 252, 3,0.5)",
+              borderColor: "rgba(86, 252, 3)",
               data: yyaxis,
             }]
           },
           options: {
+            legend: {
+              display: false
+           },
+            bezierCurve: false,
+            elements: {
+              point:{
+                  radius: 0
+              }
+          },
             maintainAspectRatio: false,
             scales: {
                 yAxes: [{
