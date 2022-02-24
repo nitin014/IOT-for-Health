@@ -163,7 +163,7 @@
         <!--REMINDER-->
         <div id="reminder" style="padding-top: 50px; display: none;">
             <div>
-                <div id="patient1_reminder" class="card shortCard">
+                <div id="patient1_reminder" class="reminderCard shortCard">
                         <div class="classA">
                             <h3>ID: </h3>
                             <input type="text" placeholder="Enter ID..." class="inputMessageField" id="reminderID" required >
@@ -172,7 +172,10 @@
                             <h3>REMARKS: </h3>
                             <input type="text" placeholder="Enter Remarks..." class="inputMessageField" id="reminderREMARKS" required >
                             <input type="button" value="Save Data" onclick="saveReminderData()" class="form-submit-button" id="saveReminderDatabtn">
+                            <input type="button" value="Reset" onclick="resetFields()" class="form-submit-button" id="resetReminderDatabtn">
                         </div>
+
+                        <div id="messageStatusForReminder"></div>
                 </div>
                 
                 <div id="displayreminderDATA"></div>

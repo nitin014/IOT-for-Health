@@ -1,7 +1,18 @@
 let myReminder = [];
 const saveDataBtn = document.getElementById('saveReminderDatabtn"');
 const displayReminderData = document.getElementById('displayreminderDATA');
+const messageStatusForReminder = document.getElementById('messageStatusForReminder');
 
+function clearMesssageStatus() {
+    messageStatusForReminder.innerHTML="";
+}
+
+
+function resetFields() {
+    clearMesssageStatus();
+    clearFieldValuesForInputFields();
+    saveDataBtn.style.pointerEvents = "auto";
+}
 
 function ReminderData(ID , Name , Remarks) {
     this.ID = ID;
@@ -17,6 +28,13 @@ function saveReminderData() {
     const _id = document.getElementById('reminderID').value;
     const _name = document.getElementById('reminderNAME').value;
     const _remarks = document.getElementById('reminderREMARKS').value;
+
+    if(_id=="" || _name=="" || _remarks=="") {
+        console.log("Please provide all the fields.");
+        messageStatusForReminder.innerHTML="<h2>Please provide all input fields.</h2>";
+        saveDataBtn.style.pointerEvents = "none";
+        return;
+    }
 
     addDataToReminder(_id,_name,_remarks);
 }
@@ -48,4 +66,12 @@ function displayDataInReminder(reminderData) {
         reminderCard.appendChild(innerCard);       
         displayReminderData.appendChild(reminderCard);
     
+        clearFieldValuesForInputFields();
+        clearMesssageStatus();
+}
+
+function clearFieldValuesForInputFields() {
+    document.getElementById('reminderID').value="";
+    document.getElementById('reminderNAME').value="";
+    document.getElementById('reminderREMARKS').value="";
 }
