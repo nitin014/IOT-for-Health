@@ -33,9 +33,17 @@
 }
 
 .information_contents {
+    margin-top: 50px;
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 100px;
+}
+
+.classA {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    gap:100px;
 }
