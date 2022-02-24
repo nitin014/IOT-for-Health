@@ -71,9 +71,20 @@ function dataloaded(data){
 
   for (const key in data.Patient1.RHD.BPM) {
     //console.log(`${key}: ${data.Patient1.RHD.BPM[key].Ts}`);
-    BPMdata.push(`${data.Patient1.RHD.BPM[key].BPM}`);
+    
     var dd = new Date(parseInt(`${data.Patient1.RHD.BPM[key].Ts}`)).toLocaleTimeString();
-    BPMtime.push(dd);
+
+    const today = new Date(Date.now());
+    const date = new Date(parseInt(`${data.Patient1.RHD.BPM[key].Ts}`));
+    var diff = Math.abs(today.getTime() - date.getTime()) / 3600000;
+
+    if (diff < 24) { 
+      console.log(diff); 
+      BPMdata.push(`${data.Patient1.RHD.BPM[key].BPM}`);
+      var dd = new Date(parseInt(`${data.Patient1.RHD.BPM[key].Ts}`)).toLocaleTimeString();
+      BPMtime.push(dd);
+    }
+
   }
 
   console.log(BPMdata);
@@ -118,9 +129,19 @@ function dataloaded(data){
     //console.log(`${key}: ${data.Patient1.RHD.BPM[key].Ts}`);
     var temp = `${data.Patient1.RHD.Bodytemp[key].TEMP}`;
     temp  = temp*1.8 + 32;
-    TEMPData.push(temp);
-    var dd = new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`)).toLocaleTimeString();
-    TEMPtiming.push(dd);
+    
+    //if(new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`)) )
+    const today = new Date(Date.now());
+    const date = new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`));
+    var diff = Math.abs(today.getTime() - date.getTime()) / 3600000;
+
+    if (diff < 24) { 
+      console.log(diff); 
+      TEMPData.push(temp);
+      var dd = new Date(parseInt(`${data.Patient1.RHD.Bodytemp[key].Ts}`)).toLocaleTimeString();
+      TEMPtiming.push(dd);
+    }
+    
   }
 
   console.log(TEMPData);
