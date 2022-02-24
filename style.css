@@ -345,3 +345,19 @@ a {
     padding: 20px;
 }
 
+
+
+
+.chartWrapper {/* w w w. j a v  a2 s.co  m*/
+    position: relative;
+ }
+ .chartWrapper > canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events:none;
+ }
+ .chartAreaWrapper {
+    width: 100%;
+    overflow-x: scroll;
+ }
