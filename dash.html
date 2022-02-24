@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOT for Health</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css"  href="cardStyledDetail.css">
+    <link rel="stylesheet" type="text/css" href="cardStyledDetail.css">
     <link rel="stylesheet" type="text/css" href="submitbutton.css">
     <script type="text/javascript" src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="#"> 
-                    <span class="title"></span> 
-                </a>
-            </li>
-            <li>
-                <a href = "#" onclick="changeVisibilityFor('home')">
-                    <span class="title">Home</span>
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                </a>
-            </li>
-            <li>
-                <a href = "#" onclick="changeVisibilityFor('medicineAlert')">
-                    <span class="title">Medicine Alert</span>
-                    <span class="icon"><ion-icon name="diamond-outline"></ion-icon></span>
-                </a>
-            </li>
-            <li>
-                <a href = "#" onclick="changeVisibilityFor('reminder')">
-                    <span class="title">Reminder</span>
-                    <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
-                </a>
-            </li>
-            <li>
-                <a href = "#" onclick="changeVisibilityFor('contact')">
-                    <span class="title">Contact</span>
-                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" onclick="logout()">
-                    <span class="title">Sign-Out</span>
-                    <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                </a>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="title"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeVisibilityFor('home')">
+                        <span class="title">Home</span>
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeVisibilityFor('medicineAlert')">
+                        <span class="title">Medicine Alert</span>
+                        <span class="icon"><ion-icon name="diamond-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeVisibilityFor('reminder')">
+                        <span class="title">Reminder</span>
+                        <span class="icon"><ion-icon name="star-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeVisibilityFor('contact')">
+                        <span class="title">Contact</span>
+                        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="logout()">
+                        <span class="title">Sign-Out</span>
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>  
     <div class="main">
         <div class="topbar">
             <div class="toggle">
-                <icon class="icon"><ion-icon name="menu-outline"></ion-icon></icon>
+                <icon class="icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </icon>
             </div>
         </div>
 
         <!--HOME-->
         <div id="home">
+<<<<<<< HEAD
             <div class="pat1"> 
                 
+=======
+            <div class="pat1">
+>>>>>>> testing
                 <div style="padding:20px" class="details">
-                    <h2 id = "name1"> Name : </h2>
-                    <h2 id = "age1"> Age : </h2>
-                    <h2 id = "medRep1"> Medical Reports : </h2>
+                    <h2 id="name1"> Name : </h2>
+                    <h2 id="age1"> Age : </h2>
+                    <h2 id="medRep1"> Medical Reports : </h2>
                 </div>
 
                 <div class="HealthData1">
+<<<<<<< HEAD
                     <h1 style = "padding:20px"> Health Related Data </h1>
                     <h2 id = "BPM1" style="padding:10px"> Heart Beat Per Minutes(BPM):</h2>
                     <!--<canvas id = "pat1BPMchart"> </canvas>-->
@@ -98,6 +107,14 @@
 
 
                     <h2 style="padding:10px"> Electrocardiogram(ECG) </h2>
+=======
+                    <h1 style="padding:20px"> Health Related Data </h1>
+                    <h2 id="BPM1" style="padding:10px"> Heart Beat Per Minutes(BPM):</h2>
+                    <canvas id="pat1BPMchart"> </canvas>
+                    <h2 id="BPM1" style="padding:10px"> Body Temperature (°F):</h2>
+                    <canvas id="pat1TEMPchart"> </canvas>
+                </div>
+>>>>>>> testing
 
                     <div class="chartWrapper"> 
                         <div class="chartAreaWrapper">
@@ -148,33 +165,96 @@
             <div class="detailsForCategories">
                 <div id="patient1_reminder" class="card">
                     <h3>Name: patient1</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
+                    <h3>Health Status:
+                        <div>Normal</div>
+                    </h3>
                 </div>
 
                 <div id="patient2_reminder" class="card">
                     <h3>Name: patient2</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
+                    <h3>Health Status:
+                        <div>Normal</div>
+                    </h3>
                 </div>
             </div>
         </div>
 
         <!--CONTACT-->
         <div id="contact" style="display: none;">
-            <div class="detailsForCategories">
-                <div id="patient1_contact" class="card">
-                    <h3>Name: patient1</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
-                </div>
+            <!-- <div class="detailsForCategories">-->
+            <div id="patient1_contact">
+                <style>
+                    table,
+                    th,
+                    td {
+                        border: 1px solid rgb(186, 217, 231);
+                    }
+                </style>
+                <h2>Patient Details</h2>
+                <table style="width:100%">
+                    <tr>
+                        <th>
+                            <h3>ID</h3>
+                        </th>
+                        <th>
+                            <h3>Name</h3>
+                        </th>
+                        <th>
+                            <h3>Age</h3>
+                        </th>
+                        <th>
+                            <h3>SEX</h3>
+                        </th>
+                        <th>
+                            <h3>Adderss</h3>
+                        </th>
+                        <th>
+                            <h3>Contact NO.</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Lana Rodes</td>
+                        <td>24</td>
+                        <td>F</td>
+                        <td>Mohrenstrasse 37 10117 Berlin</td>
+                        <td>05921 49 97 32</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Alleta Ocean</td>
+                        <td>45</td>
+                        <td>F</td>
+                        <td>Lansstraße 81 D-11179 Berlin</td>
+                        <td> 05102 66 13 33</td>
 
-                <div id="patient2_contact" class="card">
-                    <h3>Name: patient2</h3>
-                    <h3>Health Status: <div>Normal</div></h3>
-                </div>
+
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>John Wick</td>
+                        <td>32</td>
+                        <td>M</td>
+                        <td> Gotthardstrasse 11 10118 Berlin </td>
+                        <td> 05031 12 22 39</td>
+                    </tr>
+
+                </table>
             </div>
+
+            <!-- <div id="patient2_contact" class="card">
+                <h3>Name: patient2</h3>
+                <h3>Health Status:
+                    <div>Normal</div>
+                </h3>
+                </table>
+            </div>-->
+            <!-- </div>-->
         </div>
 
 
     </div>
+<<<<<<< HEAD
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -196,6 +276,29 @@
         }
     });
 </script>
+=======
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+    <script src="script.js">
+    </script>
+    <script src="messagealert.js"></script>
+    <script src="changeVisibility.js"></script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (!user) {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+>>>>>>> testing
 
 </body>
+
 </html>
