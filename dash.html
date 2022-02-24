@@ -121,10 +121,9 @@
                 <div id="patient1_MedicineAlert" class="card">
                     <div class="information_contents">
                         <h3>NAME: Patient1</h3>
-                        <h3>HEALTH STATUS: Normal</h3>
                         <h3>MESSAGE TO DISPLAY: </h3>
                         <input type="text" id="messagetodisplay" name="messagetodisplay" placeholder="Message..." class="inputMessageField" required/>
-                        <br>
+                        <h3>HEALTH STATUS: Normal</h3>
                         <input type="button" value="Send data" class="form-submit-button" onclick="sendAlertToTheDevice()">
                         <h3 id="messageStatus"></h3>
                     </div>
@@ -133,10 +132,9 @@
                 <div id="patient2_MedicineAlert" class="card">
                     <div class="information_contents">
                         <h3>NAME: Patient2</h3>
-                        <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." class="inputMessageField" required/>
                         <h3>MESSAGE TO DISPLAY: </h3>
+                        <input type="text" id="messagetodisplay2" name="messagetodisplay1" placeholder="Message..." class="inputMessageField" required/>
                         <h3>HEALTH STATUS: Normal</h3>
-                        <br>
                         <input type="button" value="Send data" class="form-submit-button">
                         <h3 id="messageStatus2"></h3>
                     </div>
@@ -150,64 +148,16 @@
         <div id="reminder" style="display: none;">
             <div class="detailsForCategories">
                 <div id="patient1_reminder" class="card">
-                    <h3>&ensp;Name: Ankita Srivatava
-                        <br>&ensp;Age: 24</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 95&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
+                    <h3>Name: patient1</h3>
+                    <h3>Health Status:
+                        <div>Normal</div>
                     </h3>
                 </div>
 
                 <div id="patient2_reminder" class="card">
-                    <h3>&ensp;Name: Priya Paul
-                        <br>&ensp;Age: 45</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 91&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
-                    </h3>
-                </div>
-                <div id="patient3_reminder" class="card">
-                    <h3>&ensp;Name: Shubham Kumar
-                        <br>&ensp;Age: 32</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 87&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
-                    </h3>
-                </div>
-                <div id="patient4_reminder" class="card">
-                    <h3>&ensp;Name: Akash Sinha
-                        <br>&ensp;Age: 15</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 98&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
-                    </h3>
-                </div>
-                <div id="patient5_reminder" class="card">
-                    <h3>&ensp;Name: Shilpi Goel
-                        <br>&ensp;Age: 28</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 105&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
-                    </h3>
-                </div>
-                <div id="patient6_reminder" class="card">
-                    <h3>&ensp;Name: Rahul Singh
-                        <br>&ensp;Age: 32</br>
-                    </h3>
-                    <h3>&ensp;Health Status:
-                        <div>&emsp;BPM- Normal</div>
-                        <div>&emsp;Body Temp- 75&#8457;</div>
-                        <div>&emsp;ECG- Normal</div>
+                    <h3>Name: patient2</h3>
+                    <h3>Health Status:
+                        <div>Normal</div>
                     </h3>
                 </div>
             </div>
@@ -221,7 +171,7 @@
                     table,
                     th,
                     td {
-                        border: 1px solid rgb(172, 197, 209);
+                        border: 1px solid rgb(186, 217, 231);
                     }
                 </style>
                 <h2>Patient Details</h2>
@@ -247,20 +197,16 @@
                         </th>
                     </tr>
                     <tr>
-                        <td>01</td>
+                        <td>1.</td>
                         <td>Ankita Srivatava</td>
-                        <td>
-                            <centre>24</centre>
-                        </td>
+                        <td>24</td>
                         <td>F</td>
                         <td>New Delhi</td>
                         <td>+91-855-563-7728</td>
                     </tr>
                     <tr>
-                        <td>02</td>
-                        <td>
-                            <centre>Priya paul</centre>
-                        </td>
+                        <td>2.</td>
+                        <td>Priya paul </td>
                         <td>45</td>
                         <td>F</td>
                         <td>Kolkata</td>
@@ -269,41 +215,33 @@
 
                     </tr>
                     <tr>
-                        <td>03</td>
+                        <td>3.</td>
                         <td>Shubham Kumar</td>
-                        <td>
-                            <centre>32</centre>
-                        </td>
+                        <td>32</td>
                         <td>M</td>
                         <td> Haridwar</td>
                         <td>+91-985-553-7612 </td>
                     </tr>
                     <tr>
-                        <td>04</td>
+                        <td>4.</td>
                         <td>Akash Sinha</td>
-                        <td>
-                            <centre>15</centre>
-                        </td>
+                        <td>15</td>
                         <td>M</td>
                         <td> New Delhi </td>
                         <td>+91-755-588-4194 </td>
                     </tr>
                     <tr>
-                        <td>05</td>
+                        <td>5.</td>
                         <td>Shilpi Goel</td>
-                        <td>
-                            <centre>28</centre>
-                        </td>
+                        <td>28</td>
                         <td>F</td>
                         <td> Haridwar </td>
                         <td>+91-955-555-5750 </td>
                     </tr>
                     <tr>
-                        <td>06</td>
+                        <td>6.</td>
                         <td>Rahul Singh</td>
-                        <td>
-                            <centre>32</centre>
-                        </td>
+                        <td>32</td>
                         <td>M</td>
                         <td> Lucknow </td>
                         <td>+91-755-501-6079</td>

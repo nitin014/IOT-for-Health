@@ -33,9 +33,11 @@
 }
 
 .information_contents {
+    margin-top: 50px;
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap:100px;
+    justify-content:flex-start;
+    gap: 30px;
 }
