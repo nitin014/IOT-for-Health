@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="cardStyledDetail.css">
     <link rel="stylesheet" type="text/css" href="submitbutton.css">
+    <link rel="stylesheet" type="text/css" href="reminderData.css">
     <script type="text/javascript" src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
 </head>
 
@@ -161,9 +162,19 @@
 
         <!--REMINDER-->
         <div id="reminder" style="padding-top: 50px; display: none;">
-            <div class="detailsForCategories">
+            <div>
                 <div id="patient1_reminder" class="card shortCard">
+                        <div class="classA">
+                            <h3>ID: </h3>
+                            <input type="text" placeholder="Enter ID..." class="inputMessageField" id="reminderID" required >
+                            <h3>Name: </h3>
+                            <input type="text" placeholder="Enter NAME..." class="inputMessageField" id="reminderNAME" required >
+                            <h3>REMARKS: </h3>
+                            <input type="text" placeholder="Enter Remarks..." class="inputMessageField" id="reminderREMARKS" required >
+                            <input type="button" value="Save Data" onclick="saveReminderData()" class="form-submit-button" id="saveReminderDatabtn">
+                        </div>
 
+                        <div id="displayreminderDATA"></div>
                 </div>
             </div>
         </div>
@@ -271,6 +282,7 @@
     </script>
     <script src="messagealert.js"></script>
     <script src="changeVisibility.js"></script>
+    <script src="displayReminderData.js"></script>
     <script>
         firebase.auth().onAuthStateChanged(function(user) {
             if (!user) {

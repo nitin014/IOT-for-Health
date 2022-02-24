@@ -45,9 +45,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 50px;
 }
 
 
 .shortCard {
     width: 400px;
+}
+
+.veryshortCard {
+    width: 200px;
 }
