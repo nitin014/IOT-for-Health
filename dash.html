@@ -70,9 +70,33 @@
                 <div class="HealthData1">
                     <h1 style = "padding:20px"> Health Related Data </h1>
                     <h2 id = "BPM1" style="padding:10px"> Heart Beat Per Minutes(BPM):</h2>
-                    <canvas id = "pat1BPMchart"> </canvas>
+                    <!--<canvas id = "pat1BPMchart"> </canvas>-->
+
+                    <div class="chartWrapper"> 
+                        <div class="chartAreaWrapper">
+                           <div class="chart-container" style="position: relative; height:40vh; width:100%"> 
+                           <canvas id="pat1BPMchart" height="300"></canvas> 
+                           </div>
+                        </div> 
+                        <canvas id="myChartAxis" height="300" width="0"></canvas> 
+                     </div> 
+
+
                     <h2 id = "BPM1" style="padding:10px"> Body Temperature(°F):</h2>
-                    <canvas id = "pat1TEMPchart"> </canvas>
+                    <!--<canvas id = "pat1TEMPchart"> </canvas>-->
+
+
+                    <div class="chartWrapper"> 
+                        <div class="chartAreaWrapper">
+                           <div class="chart-container" style="position: relative; height:40vh; width:100%"> 
+                           <canvas id="pat1TEMPchart" height="300"></canvas> 
+                           </div>
+                        </div> 
+                        <canvas id="myChartAxis" height="300" width="0"></canvas> 
+                     </div>
+
+
+
                     <h2 style="padding:10px"> Electrocardiogram(ECG) </h2>
 
                     <div class="chartWrapper"> 

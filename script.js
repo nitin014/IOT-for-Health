@@ -93,6 +93,7 @@ function dataloaded(data){
       }]
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
           yAxes: [{
               display: true,
@@ -135,6 +136,7 @@ function dataloaded(data){
       }]
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
           yAxes: [{
               display: true,
