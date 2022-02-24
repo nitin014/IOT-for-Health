@@ -35,14 +35,17 @@ function addDataToReminder(Id,Name,remarks) {
 function displayDataInReminder(reminderData) {
     
         const reminderCard = document.createElement('div');
+        const innerCard = document.createElement('div');
 
         reminderCard.classList.add('card');
         reminderCard.classList.add('shortCard');
+        innerCard.classList.add('classA');
 
-        reminderCard.textContent = `ID: ${reminderData.ID}
-                                    Name: ${reminderData.Name}
-                                    Remarks: ${reminderData.Remarks}`;
-       
+        innerCard.innerHTML = `<h3>ID: ${reminderData.ID} </h3>
+                                <h3>Name: ${reminderData.Name} </h3>
+                                <h3>Remarks: ${reminderData.Remarks}</h3>`;
+
+        reminderCard.appendChild(innerCard);       
         displayReminderData.appendChild(reminderCard);
     
 }
