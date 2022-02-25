@@ -193,9 +193,9 @@ function dataloaded(data){
             labels: xxaxis,
             datasets: [{
               
-              fill: false,
+              fill: true,
               lineTension: 0,
-              backgroundColor: "rgba(86, 252, 3,0.5)",
+              backgroundColor: "rgba(86, 252, 3,0.2)",
               borderColor: "rgba(86, 252, 3)",
               data: yyaxis,
             }]
