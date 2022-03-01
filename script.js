@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDB43wG01ov1Dcw8gYZ3NIWDT9qTjSOi44",
-  authDomain: "webserver-d7a49.firebaseapp.com",
-  databaseURL: "https://webserver-d7a49.firebaseio.com",
-  projectId: "webserver-d7a49",
-  storageBucket: "webserver-d7a49.appspot.com",
-  messagingSenderId: "362490308654",
-  appId: "1:362490308654:web:3ae23f71793fe0ea3e97bf",
-  measurementId: "G-RZX14Y2DC6"
+    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+  authDomain: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  databaseURL: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxxxxxx",
+  storageBucket: "xxxxxxxxxxxxxxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxxxxxxx",
+  appId: "xxxxxxxxxxxxxxxxxx",
+  measurementId: "xxxxxxxx"
 };
   // Initialize Firebase
 
